@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build-dev": "next build && next export && aws s3 cp ./out s3://jehoff-host --profile admin --recursive",
     "start": "next start"
   },
   "dependencies": {
