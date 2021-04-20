@@ -12,7 +12,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="hero has-background-dark is-medium is-primary">
+      <div className="hero has-background-dark is-medium is-primary hero-header">
         <div className="hero-body">
           <p className="title has-text-centered has-text-weight-light is-size-1">
             Jareem E. Hoff
@@ -21,40 +21,44 @@ export default function Home() {
         </div>
       </div>
 
-
-
-      <div className="container-fluid">
-        <div className="columns is-multiline is-centered mt-6">
-
+      <div className="container mt-6">
+        <div className="columns">
+          
           <div className="column is-6">
-            <div className="has-text-centered mb-5">
-              <p className="title">Photo Here</p>
-            </div>
-
-            <div className="mb-6">
-              <p className="is-size-4">Hello My name is Jareem and I'm a software engineer based out of New York City.
-              When I'm not busy working with other companies and really cool projects.
-          I'm usually working on my own ideas. I have a very diverse skill set ranging from designer to full on Web engineer front to back, and take pleasure in learning new things everyday to expand my knowledge and further expand my capabilities as a software engineer.</p>
-            </div>
-
-            <div className="has-text-centered">
-              <div className="mb-5">
-                <p className="is-size-4 has-text-weight-light">If you're interested in working together go ahead and click the button below!</p>
+            <div className="columns is-multiline is-centered">    
+              <div className="column is-12">
+                <h1 className="title has-text-weight-medium">About Jareem</h1>
               </div>
 
-              <div className="">
-                <button className="button is-medium is-outlined is-rounded is-primary"> Contact Me!</button>
+              <div className="column is-12">
+                <p className="is-size-5">Jareem Hoff is a web and software engineer based out of New York City, New York. He is currently working as a contract developer at ABC News. In his spare time he tries to further build up his skills as a software engineer, by planning out future applications that come to mind or working on personal projects all while reading up on new technologies and systems. Even though he spends most of his time as a web developer, he does work in other languages such as Java, Python, C++ and Golang, to try and understand programming from a deeper level. His pronouns are he/him.</p>
               </div>
+
             </div>
           </div>
 
-          <div className="column is-12">
-            <div className="has-text-centered">
-              <p className="Title">I tend to try and keep people up to date on whatever it is that I work on.</p>
+          <div className="column is-6">
+            <div className="columns is-multiline is-centered">
+              <div className="column is-12">
+                <h1 className="title has-text-weight-medium">Current Projects</h1>
+              </div>
+
+              <div className="column is-12">
+                (git hub stuff here)
+              </div>
             </div>
           </div>
         </div>
       </div>
+
+      <style jsx>{`
+        .hero-header {
+          background-image: url("https://coolbackgrounds.io/images/backgrounds/index/ranger-4df6c1b6.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+      `}
+      </style>
     </>
   )
 }
