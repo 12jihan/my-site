@@ -4,6 +4,7 @@ import TypewriterComponent from '../components/TypewriterComponent';
 import React, { useEffect } from 'react';
 import Particles from 'react-particles-js';
 import Particle_Config from '../assets/particles';
+import GithubHomeComponent from '../components/GithubHomeComponent';
 
 export default function Home() {
   const titles = [
