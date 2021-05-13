@@ -4,7 +4,7 @@ import Link from 'next/link';
 export default function NavbarComponent() {
     return (
         <>
-            <nav className="navbar is-dark">
+            <nav className="navbar navbar-color">
                 <div className="navbar-brand">
                     <a className="navbar-item subtite is-size-5 has-text-weight-light">Jareem Hoff</a>
                 </div>
@@ -21,6 +21,22 @@ export default function NavbarComponent() {
                     </Link>
                 </div>
             </nav>
+
+            <style jsx>{`
+                .navbar-color {
+                    background-color: #363636;
+                };
+                
+                .navbar-item {
+                    color: #e0e0e0;
+                    transition: background-color 0.2s, color 0.2s;
+                };
+
+                .navbar-item:hover {
+                    color: #363636 !important;
+                    background-color: #e0e0e0 !important;
+                };
+            `}</style>
         </>
     )
 }
