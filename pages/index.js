@@ -46,9 +46,7 @@ export default function Home(props) {
       <section className="hero is-halfheight hero-header hero-bg">
         <div className="hero-body">
           <div className="container has-text-centered">
-            <p className="title has-text-weight-light is-size-1 name-title">
-              JAREEM E HOFF
-            </p>
+            <img className="logoImage" src={`/nameLogoLight.png`} />
             <TypewriterComponent text={titles} color={'#e0e0e0'} />
           </div>
         </div>
@@ -57,7 +55,24 @@ export default function Home(props) {
       <section className="section">
         <div className="container">
           <div className="columns">
-            <div className="column is-6">
+            <div className="column is-12">
+              <div className="columns is-multiline">
+                <div className="column section-title">
+                  <h1 className="">Projects</h1>
+                </div>
+                <div className="column is-12">
+                  <GithubHomeComponent git={github_data} />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container">
+          <div className="columns">
+            <div className="column is-12">
               <div className="columns is-multiline">
                 <div className="column section-title">
                   <h1 className="">About</h1>
@@ -68,19 +83,8 @@ export default function Home(props) {
                 </div>
               </div>
             </div>
-
-            <div className="column is-6">
-              <div className="columns is-multiline">
-                <div className="column section-title">
-                  <h1 className="">Projects</h1>
-                </div>
-
-                <div className="column is-12">
-                  <GithubHomeComponent  git={ github_data }/> 
-                </div>
-              </div>
-            </div>
           </div>
+
         </div>
       </section>
 
