@@ -24,7 +24,7 @@ function GithubHomeComponent(props) {
                                     <th>Index</th>
                                     <th>Name</th>
                                     <th>Description</th>
-                                    <th>Size (kb)</th>
+                                    <th>Size</th>
                                     <th>Language</th>
                                     <th>Forks</th>
                                     <th>Stars</th>
@@ -41,7 +41,7 @@ function GithubHomeComponent(props) {
                                                 <th>{index + 1}</th>
                                                 <td className="has-text-left">{item.name}</td>
                                                 <td className="has-text-left">{item.description}</td>
-                                                <td className="has-text-left">{item.size / 1000}</td>
+                                                <td className="has-text-left">{Math.floor(item.size / 1000)}mb</td>
                                                 <td className="has-text-left">{item.language}</td>
                                                 <td>{item.forks}</td>
                                                 <td>{item.stargazers_count}</td>
@@ -58,34 +58,6 @@ function GithubHomeComponent(props) {
                                 }
                             </tbody>
                         </table>
-                        // return (
-                        //     <div className="column is-12 table-item" key={index}>
-                        //         <div className="columns">
-                        //             <div className="column is-1">
-                        //                 <p>{index + 1}.</p>
-                        //             </div>
-
-                        //             <div className="column is-3">
-                        //                 <p>{item.name}</p>
-                        //             </div>
-
-                        //             <div className="column is-3">
-                        //                 {item.language}
-                        //             </div>
-
-                        //             <div className="column is-3">
-                        //             </div>
-
-                        //             <div className="column is-1 has-text-centered">
-                        //                 <a href={`https://github.com/12jikan/${item.name}/archive/refs/heads/${item.default_branch}.zip`}>
-                        //                     <FontAwesomeIcon
-                        //                         icon={faArrowCircleDown}
-                        //                     />
-                        //                 </a>
-                        //             </div>
-                        //         </div>
-                        //     </div>
-                        // );
                     }
                 </div>
             </div>
