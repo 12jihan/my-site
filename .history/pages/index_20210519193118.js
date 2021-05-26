@@ -237,7 +237,7 @@ export default function Home(props) {
           bottom: 10px;
         }
 
-        .youtube :hover {
+        .youtube:hover {
           color: red;
         }
 

@@ -234,10 +234,11 @@ export default function Home(props) {
           // transition: ;
         }
         .social-media-container a:hover {
+          color: red;
           bottom: 10px;
         }
 
-        .youtube :hover {
+        .youtube:hover {
           color: red;
         }
 

@@ -13,11 +13,10 @@ export default function NavbarComponent() {
                     <Link href="/">
                         <a className="navbar-item">Home</a>
                     </Link>
-                    
                     <Link href="/">
                         <a className="navbar-item">About</a>
                     </Link>
-
+                    
                     <Link href="/">
                         <a className="navbar-item">Current Projects</a>
                     </Link>

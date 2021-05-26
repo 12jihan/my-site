@@ -1,6 +1,6 @@
 import TypewriterComponent from '../components/TypewriterComponent';
 import React, { useEffect } from 'react';
-import Link from 'next/link';
+import 
 
 import GithubHomeComponent from '../components/GithubHomeComponent';
 
@@ -125,7 +125,7 @@ export default function Home(props) {
                       </a>
                     </div>
 
-                    <div className="youtube column is-1">
+                    <div className="column is-1">
                       <a href="https://www.youtube.com/channel/UCpVjUcBeklDmisdtAt7lwQQ">
                         <FontAwesomeIcon icon={faYoutube} />
                       </a>
@@ -234,11 +234,8 @@ export default function Home(props) {
           // transition: ;
         }
         .social-media-container a:hover {
+          color: #e0e0e0;
           bottom: 10px;
-        }
-
-        .youtube :hover {
-          color: red;
         }
 
         .light-text {

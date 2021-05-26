@@ -125,7 +125,7 @@ export default function Home(props) {
                       </a>
                     </div>
 
-                    <div className="youtube column is-1">
+                    <div className="column is-1">
                       <a href="https://www.youtube.com/channel/UCpVjUcBeklDmisdtAt7lwQQ">
                         <FontAwesomeIcon icon={faYoutube} />
                       </a>
@@ -234,10 +234,11 @@ export default function Home(props) {
           // transition: ;
         }
         .social-media-container a:hover {
+          color: red;
           bottom: 10px;
         }
 
-        .youtube :hover {
+        .youtube:hover {
           color: red;
         }
 
